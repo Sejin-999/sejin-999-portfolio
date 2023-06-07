@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.container .introBox {
+  font-family: "Lato", sans-serif;
+  margin-top: 15px;
+  color: #fff;
+  font-size: 18px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 4s ease, visibility 0s linear 1s;
+}
+.container .introBox .introBox_Letter span {
+  animation: wave-animation 2s infinite;
+}
+.container .introBox .introBox_Letter .introBox_self {
+  margin-top: 3rem;
+}
+.container .introBox .introBox_Letter .introBox_self .introBox_self_goal {
+  display: flex;
+  justify-content: center;
+  color: rebeccapurple;
+  padding-top: 1rem;
+  padding-bottom: 1.2rem;
+  font-size: 42px;
+  font-weight: 700;
+}
+.container .nameBox:hover + .introBox {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+:root {
+  --clr: #00ff0a; /* 원하는 색상 값 */
+}/*# sourceMappingURL=introBox.css.map */

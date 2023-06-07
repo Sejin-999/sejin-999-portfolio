@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    background: url(../bg.jpg);
+    background-size: cover;
+    overflow: hidden;
+    z-index: 1;
+
+    i{
+        position: absolute;
+        height: 200px;
+        top: 0;
+
+        background: linear-gradient(transparent , #fff);
+        z-index: 3;
+        border-bottom-left-radius:5px ;
+        animation: rainAni 5s linear infinite;
+
+    
+    }
+    i:nth-child(3n+1){
+        background:linear-gradient(transparent, rgba(0, 255, 255, 0.3));
+    }
+    i:nth-child(3n+2){
+        background:linear-gradient(transparent, rgba(0, 255, 0, 0.3));
+    }
+    i:nth-child(3n+3){
+        background:linear-gradient(transparent, rgba(255, 0, 0, 0.3));
+    }
+}
+
+@keyframes rainAni{
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(calc(100vh + 200px));
+    }
+}
+
+
+
+.container{
+    z-index: 5;
+    .nameBox{
+        h2{
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 6em;
+            font-weight: 500;
+            color: #222;
+            letter-spacing: 5px;
+            cursor: pointer;
+            span{
+                transition: 2s;
+                
+            }
+            :hover span:nth-child(1){
+                transition: 1s;
+                margin-right: 40px;
+                
+            }
+            :hover span:nth-child(1)::after{
+                    content: "ANG";
+            }
+            :hover span:nth-child(2){
+                transition: 1s;
+                margin-right: 40px;
+ 
+            }
+            :hover span:nth-child(2)::after{
+                    content: "E";
+            }
+            :hover span:nth-child(3){
+                transition: 1s;
+                margin-right: 40px;
+  
+            }
+            :hover span:nth-child(3)::after{
+                    content: "IN";
+                    
+            }
+            :hover span{
+                
+                text-shadow: 0 0 10px #ff005b,
+                             0 0 20px #fff,
+                             0 0 40px #fff,
+                             0 0 80px #fff;
+                color: #fff;
+            }
+        }
+    }
+  }
