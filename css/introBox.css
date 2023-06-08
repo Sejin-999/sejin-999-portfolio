@@ -7,7 +7,7 @@
   font-size: 18px;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 4s ease, visibility 0s linear 1s;
+  transition: opacity 4s ease, visibility 2s linear 1s;
 }
 .container .introBox .introBox_Letter span {
   animation: wave-animation 2s infinite;
@@ -24,10 +24,22 @@
   font-size: 42px;
   font-weight: 700;
 }
+.container .introBox .introBox_Letter .introBox_self .introBox_self_content h2 span {
+  font-size: 20px;
+}
+.container .introBox .introBox_Letter .introBox_self .introBox_self_content h2 span .emphasis {
+  font-size: 28px;
+  margin-left: 0.2rem;
+  margin-right: 0.3rem;
+  text-shadow: 0 0 10px #ff005b, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
+.container .introBox .introBox_Letter .introBox_self .introBox_self_content h2 span .odd {
+  text-shadow: 0 0 10px #ff8800, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
 .container .nameBox:hover + .introBox {
   opacity: 1;
   visibility: visible;
-  transition-delay: 0s;
+  transition: 2s;
 }
 
 @keyframes wave-animation {

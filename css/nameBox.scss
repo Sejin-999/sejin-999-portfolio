@@ -6,21 +6,11 @@
     box-sizing: border-box;
 }
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    min-height: 100vh;
-    background: url(../bg.jpg);
-    background-size: cover;
-    overflow: hidden;
-    z-index: 1;
 
     i{
         position: absolute;
         height: 200px;
         top: 0;
-
         background: linear-gradient(transparent , #fff);
         z-index: 3;
         border-bottom-left-radius:5px ;
@@ -44,15 +34,28 @@ body {
         transform: translateY(-200px);
     }
     100%{
-        transform: translateY(calc(100vh + 200px));
+        transform: translateY(calc(70vh + 100px));
     }
 }
 
 
 
 .container{
-    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    background: url(../bg.jpg);
+
+    background-size: cover;
+    overflow: hidden;
+    z-index: 1;
+
+    height: 800px;
     .nameBox{
+        z-index: 5;
         h2{
             font-family: 'Bebas Neue', sans-serif;
             font-size: 6em;
