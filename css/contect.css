@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+.contect_container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../bg.jpg);
+}
+.contect_container h1 {
+  font-size: 80px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: #afaeae 0px 0px 5px, #a1a1a1 0px 0px 10px, #FFF 0px 0px 15px, #fa4c17 0px 0px 20px, #fa4c17 0px 0px 30px, #fa4c17 0px 0px 40px, #fa4c17 0px 0px 50px, #fa4c17 0px 0px 75px;
+  padding-top: 7rem;
+  position: absolute;
+  top: -4rem;
+  animation: blink 3s infinite;
+}
+.contect_container .contectBox {
+  font-family: "Bagel Fat One", cursive;
+  height: 500px;
+  width: 800px;
+  display: flex;
+  color: #fff;
+}
+.contect_container .contectBox .contectBox_content {
+  flex: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 24px;
+}
+.contect_container .contectBox .contectBox_imgBox {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+.contect_container .contectBox .contectBox_imgBox .contectBox_imgBox_img {
+  flex: 7;
+  border-radius: 10%;
+  background: url(../portIMG.jpg);
+  background-size: cover;
+}
+.contect_container .contectBox .contectBox_imgBox .contectBox_imgBox_content {
+  flex: 3;
+}
+
+a:hover {
+  color: #cfcfcf;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+}
+
+.contectBox_content_detail:nth-child(1) {
+  font-size: 64px;
+  margin-bottom: 4rem;
+  padding-right: 2rem;
+}
+
+.contectBox_content_detail:nth-child(2) {
+  font-size: 38px;
+  margin-bottom: 3rem;
+  padding-right: 2rem;
+}
+
+.contectBox_content_detail:nth-child(3) {
+  font-size: 32px;
+  margin-bottom: 4rem;
+}
+.contectBox_content_detail:nth-child(3) span:first-child {
+  margin-right: 2rem;
+}
+
+.contectBox_content_detail:nth-child(4) {
+  margin-bottom: 2rem;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00;
+  }
+}/*# sourceMappingURL=contect.css.map */
