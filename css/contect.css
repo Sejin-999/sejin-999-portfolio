@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Diphylleia&display=swap");
 .contect_container {
   display: flex;
   position: relative;
@@ -18,11 +18,12 @@
   animation: blink 3s infinite;
 }
 .contect_container .contectBox {
-  font-family: "Bagel Fat One", cursive;
+  font-family: "Diphylleia", serif;
   height: 500px;
   width: 800px;
   display: flex;
-  color: #fff;
+  color: #FFF;
+  text-transform: uppercase;
 }
 .contect_container .contectBox .contectBox_content {
   flex: 6;
@@ -33,6 +34,7 @@
   font-size: 24px;
 }
 .contect_container .contectBox .contectBox_imgBox {
+  padding-right: 4rem;
   flex: 4;
   display: flex;
   flex-direction: column;
@@ -53,9 +55,8 @@ a:hover {
 }
 
 .contectBox_content_detail:nth-child(1) {
-  font-size: 64px;
+  font-size: 68px;
   margin-bottom: 4rem;
-  padding-right: 2rem;
 }
 
 .contectBox_content_detail:nth-child(2) {
@@ -87,5 +88,16 @@ a:hover {
   100% {
     opacity: 1;
     text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00;
+  }
+}
+@keyframes rightmoving {
+  0%, 10% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
   }
 }/*# sourceMappingURL=contect.css.map */
